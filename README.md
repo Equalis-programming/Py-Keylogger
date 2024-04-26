@@ -8,6 +8,8 @@ You have two options to run this software :
 1. In a terminal, type "pip3 install .\dependencies.txt" then "python3 ".\klg.py" (useful for testing modifications)
 2. Rename the file "klg.pyw" and double click it (to hide the terminal)
 
+If you run it in the terminal, you will be able to chose the location of the keylog.txt file (the first argument is the path)
+
 # WARNING
 **This program is for educational purposes only! I am not responsible for any damage made using this software!**
 

